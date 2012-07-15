@@ -5,3 +5,4 @@ public/files/thumb/*.jpg
 public/files/thumb/*.gif
 public/files/thumb/*.png
 *.cache
+fuel/app/logs/*
