@@ -1,0 +1,133 @@
+/* ===== Primary Styles ========================================================
+   Author: Silas Ribas Martins <silasrm@gmail.com>
+   ========================================================================== */
+body {
+	/*background: #FFF url(../img/background.jpg) top center no-repeat;*/
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.geral {
+	/*height: 600px;
+	border:1px solid;*/
+}
+
+header {
+	border-bottom: 1px solid #EEE;
+}
+
+h1,
+h1 a {
+	color: #CC0052;
+	padding: 20px 0px;
+}
+
+menu {
+	margin-top: 10px;
+}
+
+menu li {
+	display: block;
+	float: left;
+	padding: 20px 0 12px 0;
+	text-align: center;
+	margin-left: 47px;
+}
+
+menu li:first-child {
+	margin-left: 0;
+}
+
+menu li a {
+	color: #0085B2;
+	font-size: 16px;
+	font-family: '232MKSDRoundLightRegular';
+	text-shadow: 0 1px 0 #FFF;
+}
+
+menu li a i {
+	color: #BBB;
+}
+
+menu li a:hover,
+menu li.active a {
+	color: #000;
+}
+
+menu li a:hover i,
+menu li.active a i {
+	color: #777;
+	text-decoration: none;
+}
+
+.conteudo {
+	min-height: 450px;
+	padding: 20px 20px;
+}
+
+.conteudo h2 {
+	color: #AAAAAA;
+	font-size: 45px;
+	font-weight: normal;
+	margin-bottom: 30px;
+	font-family: '232MKSDRoundLightRegular';
+}
+
+.conteudo p {
+	color: #555;
+}
+
+.foto-principal {
+	margin-bottom: 20px;
+}
+
+.foto-principal img {
+	border: 6px solid #FFFFFF;
+    box-shadow: 0 0 3px 1px #999999;
+}
+
+.lista-fotos div {
+	margin-bottom: 10px;
+}
+
+.lista-fotos img {
+	border: 2px solid #CCC;
+}
+
+.lista-fotos a:hover img,
+.lista-fotos a.active img {
+	border: 2px solid #40C3F0;
+	box-shadow: 0 0 3px 1px #0D536B;
+}
+
+footer {
+	background: #F5F5F5;
+	padding: 20px 0;
+	border-top: 1px solid #E9E9E9;
+}
+
+footer p {
+	font-size: 30px;
+	text-align: center;
+	line-height: 40px;
+	color: #AAA;
+	text-shadow: 1px 1px 0 #FFF;
+}
+
+footer p span {
+	color: #CC0052;
+}
+
+p.chromeframe {
+	width: 100%;
+	padding: 10px;
+	background: red;
+	text-align: center;
+	color: #FFF;
+	font-size: 16px;
+}
+
+p.chromeframe a {
+	color: #000;
+	font-weight: bold;
+	text-decoration: underline;
+}

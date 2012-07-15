@@ -1,0 +1,41 @@
+.menu-principal .nav-pills > li > a {
+  color: #CCC;
+}
+
+.menu-principal .nav-pills > li > a:hover {
+  background-color: #FFF;
+  color: #D95052;
+}
+
+.menu-principal .nav-pills > .active > a, 
+.menu-principal .nav-pills > .active > a:hover {
+  background-color: #D95052;
+  color: #FFF;
+}
+
+.menu-principal .nav-tabs .open .dropdown-toggle, 
+.menu-principal .nav-pills .open .dropdown-toggle, 
+.menu-principal .nav > li.dropdown.open.active > a:hover {
+  background-color: #999;
+  color: #FFF;
+}
+
+.menu-principal .nav-tabs .dropdown-toggle .caret, 
+.menu-principal .nav-pills .dropdown-toggle .caret {
+  border-bottom-color: #EEE;
+  border-top-color: #EEE;
+}
+
+.menu-principal .dropdown-menu li > a:hover,
+.menu-principal .dropdown-menu .active > a,
+.menu-principal .dropdown-menu .active > a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #CC000A;
+}
+
+.menu-principal .nav-tabs .dropdown-toggle:hover .caret,
+.menu-principal .nav-pills .dropdown-toggle:hover .caret {
+  border-top-color: #444;
+  border-bottom-color: #444;
+}
