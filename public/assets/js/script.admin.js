@@ -15,8 +15,8 @@ $(document).ready(function(){
 			$('#form_no_menu').removeAttr('checked');
 		}
 	});
-
-	if( $('#texto').length > 0 )
+	
+	if( $('#form_texto').length > 0 )
 	{
 		var editor = CKEDITOR.replace( 'texto' );
 		CKFinder.setupCKEditor( 

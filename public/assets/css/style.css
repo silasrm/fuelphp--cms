@@ -72,8 +72,16 @@ menu li.active a i {
 	font-family: '232MKSDRoundLightRegular';
 }
 
-.conteudo p {
+/*.conteudo p {
 	color: #555;
+}*/
+
+.icon-large {
+	font-size: 40px;
+}
+
+.align-center {
+	text-align: center;
 }
 
 footer {

@@ -30,6 +30,8 @@ class Controller_Site extends Controller_Template
 
 	public function action_index()
 	{
+		$id = null;
+		$conteudo = '';
 		try
 		{
 			// Cache::delete('home_titulo');
@@ -43,13 +45,18 @@ class Controller_Site extends Controller_Template
 		catch( CacheNotFoundException $e )
 		{
 			$pagina = Model_Pagina::find('first', array( 'where' => array(array('e_home', 1)) ));
-			$titulo = $pagina->titulo;
-			$id = $pagina->id;
-			$conteudo = View::forge('site/ver', array('pagina' => $pagina))->auto_filter(false);
 
-			Cache::set('home_titulo', $titulo);
-			Cache::set('home', $conteudo);
-			Cache::set('home_id', $pagina->id);
+			if( $pagina )
+			{
+				$titulo = $pagina->titulo;
+				$id = $pagina->id;
+				$conteudo = View::forge('site/ver', array('pagina' => $pagina))->auto_filter(false);
+
+				Cache::set('home_titulo', $titulo);
+				Cache::set('home', $conteudo);
+				Cache::set('home_id', $pagina->id);
+			}
+
 		}
 		
 		$this->template->paginaAtiva = $id;
@@ -69,12 +76,21 @@ class Controller_Site extends Controller_Template
 		
 		try
 		{
+			Cache::delete('pagina_titulo_' . $id);
+			Cache::delete('pagina_' . $id);
+
 			$titulo = Cache::get('pagina_titulo_' . $id);
 			$conteudo = Cache::get('pagina_' . $id);
 		}
 		catch( CacheNotFoundException $e )
 		{
 			$pagina = Model_Pagina::find($id);
+
+			if( !$pagina )
+			{
+				Response::redirect('404');
+			}
+
 			$titulo = $pagina->titulo;
 			$conteudo = View::forge('site/ver', array('pagina' => $pagina))->auto_filter(false);
 
