@@ -21,3 +21,47 @@ Recursos externos:
 - HTML5/CSS3
 - Font Awesome
 - CKEditor com KCFinder
+
+Instalação
+
+Segue os comandos necessários para a instalação FuelPHP::CMS e testá-lo:
+
+ - Clone o repositório: 
+	git clone https://github.com/silasrm/fuelphp--cms.git
+
+ - Entre na pasta do clone:
+	cd fuelphp--cms/
+
+ - Carregue a configuração de módulos:
+	git submodule init
+
+ - Atualize os módulos:
+	git submodule update
+
+ - Rode o comando de instalação básica com o Oil, ele irá criar alguams pastas e mudar permissão:
+	php ./oil r install
+
+ - Crie um banco de dados como deseja, por padrão vem configurado assim: fuelphpcms ( em produção ) ou fuelphpcms_dev( em desenvolvimento )
+ - Edite o arquivo de configuração do banco de dados de acordo com as informações de conexão e banco de dadoscriado: 
+	vim fuel/app/config/development/db.php 
+	ou 
+	vim fuel/app/config/production/db.php 
+
+ - Execute o migrate para criar as tabelas e os 2 usuários básicos:  
+	php ./oil r migrate:current
+
+ - Mude as permissões das pastas que serão escritas tanto no upload, via ckeditor ou pelo próprio FuelPHP:
+    chmod -R 0777 public/files/
+    chmod -R 0777 public/assets/ckeditor/kcfinder/images/
+    chmod -R 0777 fuel/app/cache/
+    chmod -R 0777 fuel/app/logs/
+
+ - Se estiver como PHP 5.4 rode o servidor embutido ou acesse como quiser, lembrando que é um framework suportando PHP 5.3+:
+    php -S localhost:8888 -t public/
+
+Usuários básicos:
+
+Acesso: localhost:8888/admin
+
+Administrador: admin / copernico <= pode tudo
+Demo: demo / demo <= só pode listar, visualizar e criar.

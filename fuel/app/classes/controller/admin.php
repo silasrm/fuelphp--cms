@@ -21,7 +21,7 @@ class Controller_Admin extends Controller_Template
 	{
 		if( Auth::check() )
 		{
-			Response::redirect('admin/pagina');
+			// Response::redirect('admin/pagina');
 		}
 
 		$view = View::forge('admin/login');
