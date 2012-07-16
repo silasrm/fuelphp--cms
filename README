@@ -1,0 +1,19 @@
+Objetivo
+
+Esse é um sistema feito para testar o FuelPHP. Esse é um CMS simples, de páginas, com upload de fotos, criação de menu automático e facilidade para criar sites simples.
+
+O que usei aqui?
+
+- Auth
+- ACL
+- Scaffold
+- Upload
+- Cache
+- Paginação
+
+Recursos externos:
+
+- Twitter Bootstrap
+- HTML5/CSS3
+- Font Awesome
+- CKEditor com KCFinder
