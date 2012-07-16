@@ -16,14 +16,19 @@ $(document).ready(function(){
 		}
 	});
 
-	var editor = CKEDITOR.replace( 'texto' );
-	CKFinder.setupCKEditor( 
-		editor, 
-		{ 
-			basePath : BASEURL + 'ckeditor/kcfinder/', 
-			rememberLastFolder : false,
-			uploadURL: BASEURL + 'assets/',
-			uploadDir: BASEURL + 'assets/'
-		} 
-	);
+	if( $('#texto').length > 0 )
+	{
+		var editor = CKEDITOR.replace( 'texto' );
+		CKFinder.setupCKEditor( 
+			editor, 
+			{ 
+				basePath : BASEURL + 'ckeditor/kcfinder/', 
+				rememberLastFolder : false,
+				uploadURL: BASEURL + 'assets/',
+				uploadDir: BASEURL + 'assets/'
+			} 
+		);
+	}
+
+	galeriaFotos();
 });

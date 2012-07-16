@@ -24,6 +24,7 @@
 		<?php echo Asset::css('font-awesome.css'); ?>
 		<?php echo Asset::css('fonts.css'); ?>
 		<?php echo Asset::css('style.css'); ?>
+		<?php echo Asset::css('galeria_fotos.css'); ?>
 		<?php echo Asset::js('head.min.js'); ?>
 		<script>
 			var BASEURL = "<?php echo Uri::base(false); ?>";
@@ -33,6 +34,7 @@
 			   {jquery: BASEURL+"assets/js/jquery-1.7.2.min.js"},
 			   {browser: BASEURL+"assets/js/browser.js"},
 			   {selectivizr: BASEURL+"assets/js/selectivizr-min.js"},
+			   BASEURL+"assets/js/galeria_fotos.js",
 			   BASEURL+"assets/js/script.js",
 			   BASEURL+"assets/js/google-analytics.js"
 			);

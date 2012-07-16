@@ -74,7 +74,6 @@ class Controller_Site extends Controller_Template
 		}
 		catch( CacheNotFoundException $e )
 		{
-			echo 111;
 			$pagina = Model_Pagina::find($id);
 			$titulo = $pagina->titulo;
 			$conteudo = View::forge('site/ver', array('pagina' => $pagina))->auto_filter(false);

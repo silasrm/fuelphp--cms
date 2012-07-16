@@ -1,0 +1,28 @@
+.foto-principal {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.load-imagem {
+	background: url(../img/ajax-loader.gif) center center no-repeat;
+	height: 500px;
+}
+
+.foto-principal img {
+	border: 6px solid #FFFFFF;
+    box-shadow: 0 0 3px 1px #999999;
+}
+
+.lista-fotos div {
+	margin-bottom: 10px;
+}
+
+.lista-fotos img {
+	border: 2px solid #CCC;
+}
+
+.lista-fotos a:hover img,
+.lista-fotos a.active img {
+	border: 2px solid #40C3F0;
+	box-shadow: 0 0 3px 1px #0D536B;
+}

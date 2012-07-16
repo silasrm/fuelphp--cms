@@ -20,6 +20,6 @@
 <p>
 	<strong>Texto:</strong>
 </p>
-<div class="span12">
-	<?php echo $pagina->texto; ?>
+<div class="row">
+	<?php echo Model_Foto::buscaTagGaleria($pagina->texto); ?>
 </div>

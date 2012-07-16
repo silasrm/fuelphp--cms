@@ -12,6 +12,7 @@
 		<?php echo Asset::css('bootstrap.min.css'); ?>
 		<?php echo Asset::css('font-awesome.css'); ?>
 		<?php echo Asset::css('admin.css'); ?>
+		<?php echo Asset::css('galeria_fotos.css'); ?>
 		<?php echo Asset::js('head.min.js'); ?>
 		<script>
 			var BASEURL = "<?php echo Uri::base(false); ?>";
@@ -24,6 +25,7 @@
 			   {tooltip: BASEURL+"assets/js/tooltip.js"},
 			   {popover: BASEURL+"assets/js/popover.js"},
 			   {ckeditor: BASEURL+"assets/ckeditor/ckeditor.js"},
+			   BASEURL+"assets/js/galeria_fotos.js",
 			   BASEURL+"assets/js/script.admin.js"
 			);
 		</script>
